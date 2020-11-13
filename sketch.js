@@ -50,7 +50,7 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
 
-	boxSide1 = Bodies.rectangle(400, 200, 20, 20, {isStatic:true}) 
+	boxSide1 = Bodies.rectangle(400, 200, 20, 20, {isStatic:false}) 
 	World.add(world,boxSide1);
 
 	boxSide2 = Bodies.rectangle(200, 200, 20, 20, {isStatic:true}) 
@@ -86,8 +86,7 @@ function keyPressed() {
  if (keyCode == DOWN_ARROW) {
 
     Body.setStatic(packageBody,false);
-	Body.setStatic(boxSide1,false);
-	
+		
   }
 
 }
